@@ -1,0 +1,32 @@
+body {
+    max-width: 1080px;
+    align-content: center;
+}
+
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+.heading-grid {
+    grid-column-start: 1 / 2;
+    grid-row-start: 1 / 2;
+    background-color: goldenrod;
+    
+}
+.img {
+    grid-column-start: 2 / 3;
+    grid-row: 1;
+    box-shadow: 10px;
+}
+
+.main-grid {
+    grid-column: 1 / 2;
+    grid-row-start: 2 / 3;
+}
+.footer {
+    background-color: goldenrod;
+    padding: 10px;
+}
