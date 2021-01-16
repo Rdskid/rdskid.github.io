@@ -1,0 +1,9 @@
+@media only screen and (min-width: 32.5em){
+    
+    .img {
+        float: right;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+}
