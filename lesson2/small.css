@@ -1,0 +1,61 @@
+body {
+    max-width: 900px;
+    align-self: center;
+    padding-left: 10px;
+}
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+h3 {
+    font-family: 'Lobster', sans-serif;
+
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 140px, auto, auto, auto;
+    align-self: center;
+}
+.titlemain {
+    grid-column-start: 1 / 1;
+    grid-row-start: 1 / 1;
+    background-color: goldenrod;
+    padding-left: 80px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+.title1 {
+    grid-column-start: 1 / 1;
+    grid-row-start: 2 / 3;
+    background-color: goldenrod;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 80px;
+    text-align: center;
+
+
+}
+
+.title2 {
+    padding-top: 20px;
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+    padding-left: 80px;
+    text-align: center;
+
+
+}
+
+.title3 {
+    padding-top: 20px;
+    grid-column: 1 / 1;
+    grid-row: 4 / 5;
+    background-color: goldenrod;
+    border-radius: 25px;
+    padding-left: 80px;
+    text-align: center;
+
+
+}
