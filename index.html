@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="small.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="medium.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" type="text/script"></script>
+    <script>
+        window.onload = function lastModified(){
+    var x = document.lastModified;
+    document.getElementById("modify").innerHTML = x;
+}
+    </script>
     
     <title>Ryan Skidmore WDD 230</title>
 </head>
@@ -19,15 +25,17 @@
         </section>
         
         <section class="main-grid">
-            <h2>WDD 230: Assignment Portal</h2>
+           <h2>WDD 230: Assignment Portal</h2>
+           <div class="hl"></div>
+           <br />
                 <li>Lesson 02: <a href="lesson2/design-princibles.html">Assignment Link</a></li>
                 <li>Lesson 03: <a href="">Assignment Link</a></li>
                 <li>Lesson 04: <a href="">Link</a> | <a href="">Link</a></li>
         </section>
     <div class="footer">
         <p>&copy 2021 | D. Ryan Skidmore | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <script>lastModified()</script>
-        <p id="modify"></p>
+       <p>Last Modified: <p id="modify"></p> </p>
+        
     </div>
 </div>
 </body>

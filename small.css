@@ -38,6 +38,12 @@ body {
     border-radius: 10%;
 }
 
+.hl{
+    border-bottom: 3px solid black;
+    height: 3px;
+    width: 600px;
+}
+
 .main-grid {
     grid-column-start: 1;
     grid-row-start: 3 / 3;
