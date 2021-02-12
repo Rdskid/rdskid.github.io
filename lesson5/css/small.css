@@ -82,6 +82,8 @@ header h1 {
     position: relative;
     box-shadow: 5px 5px 10px black;
     max-width: 400px;
+    width: 100%;
+    height: auto;
 
 }
 .summary {
