@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ryan Skidmore">
+        <meta name="description" content="This is the website to showcase weather in the Preston Idaho area.">
+
+        <!-- links -->
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/lazy-load.js"></script>
+        <script src="js/myjavascript.js"></script>
+
+        <title>Preston Idaho</title>
+    </head>
+    <body onload="date();">
+        <section class="main-grid">
+        <header>
+            <img src="images/logo.png" alt="Logo">
+            <h1>How's the Weather Down There?</h1>
+            <p>What's going on out there?</p>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="">Home</a></li>
+                <li><a  href="../lesson6/preston-6.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a class="active" href="gallery-7.html">Gallery</a></li>
+    
+             </ul>
+
+        </nav>
+        <main>
+            <h2>Weather Gallery</h2>
+            <div class="gallery-grid">
+                <div class="photo1">
+                <img data-src="images/clouds.jpg" alt="Clouds" class="lazy" src="images/placeholder.png" />
+                <p>Gathering Storm Clouds</p>
+                </div>
+                <div class="photo2">
+                    <img data-src="images/lightning1.jpg" alt="Lightning" class="lazy" src="images/placeholder.png" />
+                    <p>Blue Strike Near Sunset</p>
+                </div>
+                <div class="photo3">
+                    <img data-src="images/lightning2.jpg" alt="Lightning" class="lazy" src="images/placeholder.png" />
+                    <p>Gray Lightning Strike</p>
+                </div>
+                <div class="photo4">
+                    <img data-src="images/rain.jpg" alt="Rain" class="lazy" src="images/placeholder.png" />
+                    <p>Rain on a Window</p>
+                </div>
+                <div class="photo5">
+                    <img data-src="images/sky.jpg" alt="Sky" class="lazy" src="images/placeholder.png" />
+                    <p>Rays of Sun, Piercing the Clouds</p>
+                </div>
+                <div class="photo6">
+                    <img data-src="images/storm.jpg" alt="Storm" class="lazy" src="images/placeholder.png" />
+                    <p>A Massive Storm Gathering in a Cyclone</p>
+                </div>
+                <div class="photo7">
+                    <img data-src="images/Winter.jpg" alt="Winter" class="lazy" src="images/placeholder.png" />
+                    <p>Winter Road after a New Layer of Snow</p>
+
+                </div>
+                <div class="photo8">
+                    <img data-src="images/tornado.jpg" alt="Tornado" class="lazy" src="images/placeholder.png" />
+                    <p>Tornado Rolls Down a Hillside</p>
+                </div>
+                <div class="photo9">
+                    <img data-src="images/sunset.jpg" alt="Sunset" class="lazy" src="images/placeholder.png" />
+                    <p>An Amazing Sunset over a Still Lake</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;How's the Weather Down There? | Attributes | D. Ryan Skidmore | <p id="date" class="date" >!</p></p>
+        </footer>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.28S/webfont.js">
+            WebFont.load({
+              google: {
+                families: [
+                   'Architects Daughter'
+                   ,'Yusei Magic'
+                ]
+              }
+            });
+            </script>
+    </body>
+</html>
