@@ -269,6 +269,7 @@ footer .date {
 /*Gallery CSS*/
 .gallery-grid {
     display: block;
+    justify-content: center;
 }
 
 .photo1 {
