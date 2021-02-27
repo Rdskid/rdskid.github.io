@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ryan Skidmore">
+        <meta name="description" content="This is the website to showcase weather in the Preston Idaho area.">
+
+        <!-- links -->
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/myjavascript.js"></script>
+
+        <title>Preston Idaho</title>
+    </head>
+    <body onload="date();">
+        <section class="main-grid">
+        <header>
+            <img src="../lesson5/images/logo.png" alt="Logo">
+            <h1>How's the Weather Down There?</h1>
+            <p>What's going on out there?</p>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="">Home</a></li>
+                <li><a  href="../lesson6/preston-6.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a class="active" href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+    
+             </ul>
+
+        </nav>
+        <main>
+            <form id="stormform" action="thanks.html">
+
+                <h3>Enter User Info.</h3>
+                <div class="form1">
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" pattern="[a-z](1,9]}" required><br/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="jonnyappleseed@email.com"><br/>
+                <label for="tel">Telephone:</label>
+                <input type="tel" id="tel" name="tel" required><br/>
+                <label for="zip">Zipcode:</label>
+                <input type="number" id="zip" name="zip" required><br/>
+                </div>
+
+                <h3>Storm Info.</h3>
+                <div class="form2">
+                <label for="stormdate">Storm Date:</label>
+                <input type="date" id="stormdate" name="stormdate"><br/>
+
+                <label for="stormtype">Select Storm Type:</label>
+                <input list="stormtypes" name="stormtype" id="stormtype">
+                    <datalist id="stormtypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist><br />
+
+                <label for="severity">Storm Severity:</label>
+                <input type="range" id="severity" name="severity" min="1" max="10" step="1" list="tickmarks" oninput="adjustValue(this.value)" onchange="adjustValue(this.value)"> 
+                <span id="severityvalue">5</span><br/>
+
+                <label for="stormregion">Storm Region:</label>
+                <select id="stormregion" name="stormregion">
+                    <option value="Select Region">Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select><br/><br/>
+                <label id="danger">User in Danger:</label><br/>
+                <input type="radio" id="yes" name="danger" value="Yes">
+                <label for="yes">Yes.</label> <br/>
+                <input type="radio" id="no" name="danger" value="No">
+                <label for="no">No.</label><br/>
+                <input type="radio" id="maybe" name="danger" value="Maybe">
+                <label for="maybe">Maybe.</label> <br/> <br/>
+                <label for="additional">Additional Information:</label> <br/>
+                <textarea rows="5" id="additional" name="additional" form="stormform" style="width:200px;">
+Enter text here...
+                </textarea><br/>
+                <input type="submit" value="Submit">
+               
+
+
+            </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;How's the Weather Down There? | Attributes | D. Ryan Skidmore | <div id="date" class="date" ></div></p>
+        </footer>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.28S/webfont.js">
+            WebFont.load({
+              google: {
+                families: [
+                   'Architects Daughter'
+                   ,'Yusei Magic'
+                ]
+              }
+            });
+            </script>
+    </body>
+</html>
