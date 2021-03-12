@@ -1,0 +1,201 @@
+@media only screen and (min-width: 1000px){
+    
+
+    /* header for all pages */
+    /*Preston */
+    .fiveday{
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto;
+    }
+    .day1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .day2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .day3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .day4 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .day5 {
+        grid-column: 5;
+        grid-row: 1;
+    }
+   
+    /*Gallery*/
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: auto, auto, auto;
+        grid-template-rows: auto, auto, auto;
+        width: 100%;
+        justify-content: center;
+    
+    }
+    .gallery-grid img{
+        width: 300px;
+        height: auto;
+
+    }
+    .gallery-grid div {
+        margin: 10px;
+    }
+
+    .gallery-grid div:hover {
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        -moz-box-shadow:    3px 3px 5px 6px #ccc; 
+        box-shadow:         3px 3px 5px 6px #ccc;
+    }
+    
+    .photo1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .photo2 {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    .photo3 {
+        grid-column: 3 / 4;
+        grid-row: 1;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .photo4 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .photo5 {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .photo6 {
+        grid-column: 3 / 4;
+        grid-row: 2;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+    .photo7 {
+        grid-column: 1 / 2;
+        grid-row: 3;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .photo8 {
+        grid-column: 2 / 3;
+        grid-row: 3;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+    .photo9 {
+        grid-column: 3 / 4;
+        grid-row: 3;
+        width: 300px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .cards {
+        display: grid;
+        max-width: 1225px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+        padding: 10px 10px;
+        list-style: none;
+    }
+
+    .cards img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+        
+    .cards section {
+        background-color: #9AD5CA;
+        padding: 1em;
+        margin: .25em;
+        box-shadow : 0 0 25px #9AD5CA;
+    }
+
+    .cards h2 { 
+        font-family: 'Yusei Magic', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 3px 3px 1.5px white;
+        color: black;
+    }
+    
+    .cards p:nth-child(2) {
+        flex-wrap: wrap;
+        font-family: 'Architects Daughter', cursive;
+        font-style: italic;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        margin-top: -18px;
+        margin-bottom: 30px;
+    }
+
+    .cards p {
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+        color: black;
+        margin-top: -7px;
+    }
+
+    .cards section div {
+        margin-left: 90px;
+    }
+
+    .cards section:nth-child(even) div {
+        margin-right: 95px;
+    }
+
+    .cards section:nth-child(2) div {
+        margin-right: 95px;
+    }
+
+    .cards section:nth-child(3) div h2{
+        margin-right: 90px;
+    }
+
+    .cards section:nth-child(3) div p{
+        margin-left: -75px;
+    }
+    
+
+
+
+}
