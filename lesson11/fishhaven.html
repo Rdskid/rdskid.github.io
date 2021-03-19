@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!---Meta Tags--->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ryan Skidmore">
+        <meta name="description" content="This is the website to showcase weather in the Preston Idaho area.">
+
+        <!-- links -->
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script src="js/myjavascript.js"></script>
+        <script src="js/fishhaven.js"></script>
+
+        <title>Fish Haven Idaho</title>
+    </head>
+    <body onload="windChill(); date();">
+        <section class="main-grid">
+        <header>
+
+            <img src="images/logo.png" alt="Logo">
+            <h1>How's the Weather Down There?</h1>
+            <p>What's going on out there?</p>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+    
+             </ul>
+
+        </nav>
+        <main>
+            <div class="summary">
+                <h1>Fish Haven</h1>
+                <img class="hero-image" src="images/hero.jpg">
+                <div class="report">
+                    <p>Currently: <span id="currently"></span></p>
+                    <p>Temp: <span id="temp"></span>&deg;F</p>
+                    <p>Wind Chill: <span id="windChill"></span></p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wSpeed"></span>mph</p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2 class="forecast-title">5-Day Forecast</h2>
+                <div class="fiveday">
+                    <div class="day1">
+                        <h2 id="day1"></h2>
+                        <img id="img1" src="" alt="" style="height: 80px; width: auto;">
+                        <h3><span id="forecast1"></span> &#8457;</h3>
+                    </div>
+                    <div class="day2">
+                        <h2 id="day2"></h2>
+                        <img id="img2" src="" alt="" style="height: 80px; width: auto;">
+                        <h3><span id="forecast2"></span> &#8457;</h3>
+                    </div>
+                    <div class="day3">
+                        <h2 id="day3"></h2>
+                        <img id="img3" src="" alt="" style="height: 80px; width: auto;">
+                        <h3><span id="forecast3"></span> &#8457;</h3>
+                    </div>
+                    <div class="day4">
+                        <h2 id="day4"></h2>
+                        <img id="img4" src="" alt="" style="height: 80px; width: auto;">
+                        <h3><span id="forecast4"></span> &#8457;</h3>
+                    </div>
+                    <div class="day5">
+                        <h2 id="day5"></h2>
+                        <img id="img5" src="" alt="" style="height: 80px; width: auto;">
+                        <h3><span id="forecast5"></span> &#8457;</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="events"></div>
+            <article>
+                <h2>Rain</h2>
+                <h3>National Geographic</h3>
+                <img src="images/rain.jpg" alt="Article Storm" class="article-img">
+                <p> Rain is liquid precipitation: water falling from the sky. Raindrops fall to Earth when clouds become saturated, or filled, with water droplets. Millions of water droplets bump into each other as they gather in a cloud. When a small water droplet bumps into a bigger one, it condenses, or combines, with the larger one. As this continues to happen, the droplet gets heavier and heavier. When the water droplet becomes too heavy to continue floating around in the cloud, it falls to the ground. </p>
+                <p> Human life depends on rain. Rain is the source of freshwater for many cultures where rivers, lakes, or aquifers are not easily accessible. Rain makes modern life possible by providing water for agriculture, industry, hygiene, and electrical energy. Governments, groups, and individuals collect rain for personal and public use.</p>
+                
+            </article>
+            <div class="contact">
+                <div class="googlMap">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Fishhaven%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><a href="https://www.embedgooglemap.net">maps embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}</style></div></div>
+                </div>
+                <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Ryan Skidmore</p>
+                <p>rdskid@byui.edu</p>
+                <p>333-333-3333</p>
+                <a href="www.facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+                <a href="www.instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+                <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copyHow's the Weather Down There? | Attributes | D. Ryan Skidmore | <p id="date" class="date" ></p></p>
+        </footer>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.28S/webfont.js">
+            WebFont.load({
+              google: {
+                families: [
+                   'Architects Daughter'
+                   ,'Yusei Magic'
+                ]
+              }
+            });
+            </script>
+    </body>
+</html>

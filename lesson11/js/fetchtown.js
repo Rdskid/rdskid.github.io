@@ -1,13 +1,4 @@
-let townid = " ";
-let name = document.querySelector('.active').textContent;
 
-if (name == "Preston") {
-    townid = "id=5604473";
-} else if (name == "Soda Springs") {
-    townid = "id=5607916";
-} else if (name == "Fish Haven") {
-    townid = "lat=42.0380399&lon=-111.4048681";
-}
 
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
