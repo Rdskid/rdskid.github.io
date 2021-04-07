@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Syracuse's Chamber of Commerce website.">
+    <meta name="author" content="Ryan Skidmore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Syracuse Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/finaljava.js"></script>
+
+
+</head>
+<body onload="date();">
+
+<div class="page">
+    <header>
+    <!--Title-->
+    <h1>Syracus's Chamber of Commerce</h1>
+
+    <!--Nav-->
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="syracuse.html">Syracuse</a></li>
+        <li><a class="active" href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </nav>
+    <img src="images/background img3.jpg" class="hero-image" alt="Buffallo overlooking syracuse">
+
+    </header>
+    <main>
+        <h3>Please fill out the form if wish to join the Chamber of Commerce</h3>
+        <form method="get" action="confirmation.html">
+            <fieldset>
+                <legend>Chamber Information</legend>
+                <label class="top">First Name<span class="req">*</span> <input type="text" name="fname" pattern="[A-Z a-z]+" minlength="3" required="" ></label>
+                <label class="top">Last Name<span class="req">*</span> <input type="text" name="lname" pattern="[A-Z a-z]+" minlength="3" required="" ></label>
+                <label class="top">Title <input type="text" name="title" pattern="[A-Z a-z]+" minlength="5"></label>
+                <label class="top">Email<span class="req">*</span> <input type="email" name="email" placeholder="" required="" ></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder=""></label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business name<span class="req">*</span> <input type="text" name="businessname" pattern="[A-Z a-z]+" minlength="5" required="" ></label>
+                <label class="top">Business address <input type="text" name="address" placeholder="street address"><br><input type="text" name="city" placeholder="city"><br><input type="text" name="state" placeholder="state"><br><input type="number" name="zipcode" placeholder="postal/zipe code"> </label>
+                <label class="top">Business website <input type="url" name="website" placeholder=""></label>
+                <label class="top">Number of members <input type="text" name="nummember" placeholder=""></label>
+                <label class="top">Number of staff <input type="text" name="numstaff" placeholder=""></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Type</legend>
+                <div class="member">Chamber Membership Type</div>
+                <label class="mem"><input type="radio" name="member" value="non-profit"> Non-profit-$100</label>
+                <label class="mem"><input type="radio" name="member" value="bronze"> Bronze-$200</label>
+                <label class="mem"><input type="radio" name="member" value="silver"> Silver-$400</label>
+                <label class="mem"><input type="radio" name="member" value="gold"> Gold-$1000</label>
+            </fieldset>
+            <fieldset>
+                <legend>Business description </legend>
+                <label class="top">Business description <textarea class="business-des" name="business-descr"></textarea></label>
+              </fieldset>
+              <input type="submit" value="Submit My Application" class="submitButton">
+          </form>
+    </main>
+    <footer>
+        <div id="date"></div>
+    </footer>
+</div>
+</body>
+</html>

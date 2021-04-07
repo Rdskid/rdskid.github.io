@@ -1,0 +1,65 @@
+@media only screen and (min-width: 800px){
+
+    .page {
+        width: 800px;
+    }
+    nav {
+        background-color: #373A43;
+        color: white;
+        width: auto;
+        
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      nav li {
+        float: left;
+      }
+      
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+     nav li a:hover {
+        background-color: #0FFA89;
+        color: black;
+      }
+}
+
+/*home*/
+.hero-image{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.company1 {
+  background-color: white;
+  padding: 5px;
+  width: 210px;
+  float: left;
+}
+.company2 {
+  background-color: white;
+  padding: 5px;
+  width: 210px;
+  float: center;
+}
+
+.company3 {
+  background-color: white;
+  padding: 5px;
+  width: 210px;
+  float: right;
+}

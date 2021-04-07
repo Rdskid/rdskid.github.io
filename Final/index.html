@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Syracuse's Chamber of Commerce website.">
+    <meta name="author" content="Ryan Skidmore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Syracuse Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/finaljava.js"></script>
+    <script src="js/forecast.js"></script>
+
+
+</head>
+<body onload="date();">
+
+<div class="page">
+    <header>
+    <!--Title-->
+    <h1>Syracus's Chamber of Commerce</h1>
+
+    <!--Nav-->
+    <nav>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="syracuse.html">Syracuse</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </nav>
+
+    <img src="images/background img3.jpg" class="hero-image" alt="Buffallo overlooking syracuse">
+    </header>
+    <main>
+        <h2>Our Vision</h2>
+        <p>     Our vision is to help bring awareness to the businesses and people of <i>Syracuse Utah</i>.  This is a place that is special to many people and we wish to be able to make it a special place to all that come.</p>
+
+        <h2>Come Join Us</h2>
+        <p>If you wish to sign up and be apart of this community please fill out the form <a href="join.html">here.</a></p>
+        <h2>Weather and Events</h2>
+        <div class="weather-grid">
+            <div class="event-1">
+                <h4>Upcoming Event</h4>
+                <p><b>Easter Egg Hunt</b> will be held at Founders at 10:00 am on the 3rd of April.</p>
+            </div>
+            <div class="forecast">
+                <h3 class="forecasttitle">3-Day Forcast</h3>
+                <br>
+                <div class="forecast_true">
+                <div class="day1">
+                    <h4 id="dayoftheweek1"></h4>
+                    <img id="icon1" src="#" alt="">
+                    <span><span id="forecast1"></span> &#176;F</span>
+                </div>
+                <div class="day2">
+                    <h4 id="dayoftheweek2"></h4>
+                    <img id="icon2" src="#" alt="">
+                    <span><span id="forecast2"></span> &#176;F</span>
+                </div>
+                <div class="day3">
+                    <h4 id="dayoftheweek3"></h4>
+                    <img id="icon3" src="#" alt="">
+                    <span><span id="forecast3"></span> &#176;F</span>
+                </div>
+                </div>
+            </div>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span> &#8457;</p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                </div>
+        </div>
+        <h2>Company Spotlight</h2>
+        <div class="spotlight">
+            <a href="https://rushfunplex.com/" target="_blank" ><div class="company1">
+                <h3>The Rush</h3>
+                <img src="images/rush.jpg" alt="The Rush Funplex">
+                
+            </div></a>
+            <a href="https://www.lovethebird.com/menu/" target="_blank" ><div class="company2">
+                <h3>The Bird</h3>   
+                <img src="images/thebird.JPG" alt="The Bird Restuarant">             
+            </div></a>
+            <a href="https://www.facebook.com/LeilasLuau" target="_blank" ><div class="company3">
+                <h3>Leila's Luau</h3>
+                <img src="images/leilasluau.JPG" alt="Leila's Laua Diner">
+            </div></a>
+        </div>
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Ryan Skidmore</p>
+            <p>rdskid@byui.edu</p>
+            <p>333-333-3333</p>
+            <a href="www.facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+            <a href="www.instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+            <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+            </div>
+
+    </main>
+    <footer>
+        <div id="date"></div>
+    </footer>
+</div>
+</body>
+</html>

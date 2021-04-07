@@ -1,0 +1,61 @@
+{
+    "directory": [
+        {
+            "businessname": "The Rush",
+            "businesstel": "(801) 779-2695",
+            "logo": "images/The-Rush-Logo.jpg",
+            "web": "https://rushfunplex.com/",
+            "order": 1
+        },
+
+        {
+            "businessname": "The Bird",
+            "businesstel": "(385) 477-8663",
+            "logo": "images/the-bird-logo.jpg",
+            "web": "https://www.lovethebird.com/",
+            "order": 2
+        },
+
+        {
+            "businessname": "Leila's Luau",
+            "businesstel" : "(801) 820-5097",
+            "logo": "images/leilas-luau-logo.jpg",
+            "web": "https://www.facebook.com/LeilasLuau",
+            "order": 3
+        },
+
+        {
+            "businessname": "RCWilley",
+            "businesstel": "(801) 774-0247",
+            "logo": "images/rcwilley-logo.png",
+            "web": "www.rcwilley.com",
+            "order": 4
+        },
+
+        {
+            "businessname": "Glen Eagle Golf Course",
+            "businesstel": "(801) 693-4366",
+            "logo": "images/glen-eagle-logo.png",
+            "web": "www.golfgleneagle.com",
+            "order": 5
+        },
+
+        {
+            "businessname": "Twisted Sugar",
+            "businesstel": "(801) 784-7271",
+            "logo": "images/twisted-sugar-logo.jpg",
+            "web": "https://twistedsugar.com/",
+            "order": 6
+        },
+
+        {
+            "businessname": "Beans & Brews Coffee Shop",
+            "businesstel": "(801) 773-5247",
+            "logo": "images/beans-brews-logo.jpg",
+            "web": "https://www.beansandbrews.com/coffee-shops/syracuse/",
+            "order": 7
+        }
+
+
+    ]
+}
